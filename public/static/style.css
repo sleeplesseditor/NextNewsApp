@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    border-bottom: 1px solid #e6e4e4;
+    background-color: #e6e4e4;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 2px -2px #a3a3a3;
+}
+
+.nav-bar-image, .nav-bar-link {
+    padding: 0.5rem;
+}
+
+.nav-bar-link {
+    font-size: 2em;
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+}
