@@ -1,10 +1,12 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .layout-background {
     background-color: rgb(250, 248, 248);
+    height: 100%;
 }
 
 .nav-bar {
@@ -37,14 +39,16 @@ body {
 .item-card {
     padding: 1rem;
     width: 30%;
-    border: 1px solid gray;
+    border: 0.5px solid gray;
     border-radius: 10px;
     margin: 0.25rem;
     transition: all .2s ease-in-out;
+    background-color: #fff;
+    box-shadow: 6px 6px 1px 0px rgba(163,163,163,1);
 }
 
 .item-card:hover {
-    background-color: #a3a3a3;
+    background-color: rgba(163,163,163,1);
 }
 
 .item-card:hover > .item-card-link,
@@ -65,3 +69,29 @@ body {
 .item-card-text:nth-of-type(2) {
     margin-bottom: 0;
 }
+
+.search-form {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.search-form > input {
+    width: 80%;
+    padding: 0.2rem 0.65rem;
+}
+
+.search-form-button {
+    background-color: rgb(212, 1, 1);
+    color: #fff;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    border: none;
+    padding: 0.35rem 0.65rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+.search-form-button:hover {
+    background-color: rgb(255, 0, 0);
+}
+

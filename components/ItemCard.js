@@ -1,7 +1,7 @@
 import moment from 'moment';
 
-const ItemCard = ({ key, title, url, author, points, comments, createdAt }) => (
-    <div className="item-card" key={key}>
+const ItemCard = ({ index, title, url, author, points, comments, createdAt }) => (
+    <div className="item-card" key={index}>
         <a href={url} target="_blank" className="item-card-link">
             {title}
         </a>
